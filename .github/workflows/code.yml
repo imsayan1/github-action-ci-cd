@@ -1,0 +1,17 @@
+name: Code
+
+on:
+   workflow_call:
+
+jobs:
+   code-checkout:
+     runs-on: ubuntu-latest
+
+     steps:
+        - name: Clone the code 
+          uses: action/checkout@v7
+
+        - name: Print the message 
+          run: echo "Code Cloned"
+          
+     
